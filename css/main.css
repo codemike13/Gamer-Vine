@@ -1,0 +1,127 @@
+@font-face{
+    font-family: 'ethno';
+    src:url('/font/ethnocentric\ rg.ttf')format('truetype');
+}
+body{
+    width: 99vw;
+    height:100vh;
+    overflow: hidden;
+    /* background-color: rgba(0, 0, 0, .8); */
+    background-color:rgba(19, 19, 35, 0.71);
+
+}
+button{
+    outline: none;
+}
+
+#container{
+    display: grid;
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height:100%;
+    grid-template-areas: 
+    'home nav'
+    'cont cont'
+    'cont cont'
+    ;
+    grid-template-rows: 15% 85%;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+}
+
+#home-logo{
+    grid-area: home;
+    display:flex;
+    height: 100%;
+    width:90%;
+    margin-top: 13%;
+    margin-left: 7%;
+    overflow: hidden;
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
+    box-shadow: 10px 0px 10px ;
+    
+    /* background-color: inherit; */
+    background: none;
+   
+}
+
+#navbar{
+    grid-area: nav;
+    display: flex;
+    flex-shrink: 10;
+    flex-direction: row;
+    width: 98%;
+    height:88%;
+    justify-content: flex-end;
+    align-items: center;
+    background-color:rgba(0, 0, 0, .9);
+    /* border: 1px solid black; */
+    margin-top: 1%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+    box-shadow: -5px 10px 15px ;
+    background-image: url('/images/vine.png');
+    background-size: 80% 150%;
+    background-position: right;
+    background-repeat: no-repeat;
+    /* border-left: none; */
+    /* border-bottom: none; */
+
+}
+#navbar h1{
+    justify-self: start;
+    color:rgb(139, 118, 163);
+    margin-right: 3%;
+    font-size: 1.8rem;
+    font-family: ethno;
+    line-height: 150%;
+}
+
+
+/* Accessing buttons in nav div  
+Here we can set image for each button ,
+on hover 
+*/
+#navbar a{
+    display: flex;
+    height: 70%;
+    width:12%;
+    margin-right: 3%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 5px 30px;
+    border: none;
+    border-radius: 20%;
+    /* clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%); */
+}
+
+#navbar button:hover{
+    width: 11%; 
+    height: 65%;
+}
+
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: cont;
+    width: 100vw;
+    height:100%;
+    /* border: 1px solid black; */
+    /* margin-top: -50%; */
+}
+
+
+
+#landing-content{
+    height: 90%;
+    width: 99%;
+    border: 1px solid black;
+}

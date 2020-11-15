@@ -1,0 +1,40 @@
+#ps5{
+    background-image: url('/images/imag-alts/ps5-icon-white.png');
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#xbox{
+     background-image: url('/images/imag-alts/xbox-icon-white.png');
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#news{
+    background-image: url('/images/imag-alts/news-icon-white.png');
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#reviews{
+    background-image: url('/images/imag-alts/reviews-icon-white.png');
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#logo-a{
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/grapes.png');
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: rgba(0,0,0,1);
+
+}
+
