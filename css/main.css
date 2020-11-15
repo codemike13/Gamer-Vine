@@ -34,7 +34,7 @@ button{
 #home-logo{
     grid-area: home;
     display:flex;
-    height: 100%;
+    height: 68%;
     width:90%;
     margin-top: 13%;
     margin-left: 7%;
@@ -101,7 +101,7 @@ on hover
     /* clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%); */
 }
 
-#navbar button:hover{
+#navbar a:hover{
     width: 11%; 
     height: 65%;
 }
@@ -113,7 +113,19 @@ on hover
     align-items: center;
     grid-area: cont;
     width: 100vw;
-    height:100%;
+    height:105%;
+
+    /* border: 1px solid black; */
+    /* margin-top: -50%; */
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: cont;
+    width: 100vw;
+    height:105%;
 
     /* border: 1px solid black; */
     /* margin-top: -50%; */
@@ -125,6 +137,6 @@ on hover
     height: 90%;
     width: 99%;
     border: 1px solid black;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(150, 150, 150, 0.4);
 
 }
