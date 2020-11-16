@@ -41,7 +41,7 @@ button{
     overflow: hidden;
     border-top-left-radius: 25%;
     border-bottom-left-radius: 25%;
-    box-shadow: 10px 0px 10px ;
+    /* box-shadow: 10px 0px 10px ; */
     
     /* background-color: inherit; */
     background: none;
