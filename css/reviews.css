@@ -12,9 +12,9 @@
     text-align: center;
     /* row-gap: -10px; */
 }
-#reviews-content div{
-    background-color: rgb(66, 53, 184);
-}
+/* #reviews-content div{
+    background-color: white;
+} */
 #ps-logo{
     grid-area:ps5 ;
     border:1px solid black;
@@ -83,6 +83,7 @@
 #rev-input{
     width: 90%;
     height: 90%;
+    border-radius: 25px;
 }
 
 #review-card{
@@ -94,7 +95,11 @@
     grid-template-areas: 
     'user txt txt'
     ;
-    border:1px solid black;
+    /* border:1px solid black; */
+    background-image: url('/images/screenThing.png');
+    background-position: center;
+    background-size: 115% 120%;
+    background-repeat: no-repeat;
 }
 #user-stars{
     grid-area: user;
@@ -104,17 +109,17 @@
     flex-direction: column;
     width: 90%;
     height: 90%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin:5%;
-
+    background: transparent;
 }
 #user-review{
     grid-area: txt;   
     width: 90%;
     height: 90%; 
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin:5%;
-
+background-color: none;
 }
 #user-img{
     width: 90%;

@@ -1,3 +1,9 @@
+
+
+
+
+
+
 modStars = (ele) => {
     let stars = document.querySelectorAll('#stars > div')
     let rating = ele.id

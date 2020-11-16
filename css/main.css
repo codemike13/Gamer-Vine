@@ -54,7 +54,7 @@ button{
     flex-shrink: 10;
     flex-direction: row;
     width: 98%;
-    height:88%;
+    height:62%;
     justify-content: flex-end;
     align-items: center;
     background-color:rgba(0, 0, 0, .9);
@@ -75,11 +75,25 @@ button{
 }
 #navbar h1{
     justify-self: start;
-    color:rgb(139, 118, 163);
-    margin-right: 3%;
-    font-size: 1.8rem;
+    color:rgb(84, 31, 145);
+    text-shadow:10px 10px 10px violet;
+    margin-right: 8%;
+    font-size:2rem;
     font-family: ethno;
     line-height: 150%;
+    animation:glow 6s linear infinite
+}
+
+@keyframes glow{
+    0%{text-shadow:10px 10px 10px violet;
+    color:rgb(84, 31, 145);
+    }
+    50%{text-shadow:10px 10px 0px violet;
+    color:rgb(232, 203, 233);
+    }
+    100%{text-shadow:10px 10px 10px rgb(116, 44, 116);
+    color:rgb(40, 10, 73);
+    }
 }
 
 
@@ -90,7 +104,7 @@ on hover
 #navbar a{
     display: flex;
     height: 70%;
-    width:12%;
+    width:10%;
     margin-right: 3%;
     justify-content: center;
     align-items: center;

@@ -34,7 +34,15 @@
     background-repeat: no-repeat;
     background-position: center;
     border: none;
-    background-color: rgba(0,0,0,1);
-
+    /* background-color: rgba(0,0,0,1); */
+    animation: tilty 3s linear  infinite  ;
 }
 
+@keyframes tilty{
+    0%{transform: rotateZ(0deg);}
+    25%{transform: rotateZ(5deg);}
+    50%{transform: rotateZ(-5deg);}
+    100%{transform: rotateZ(0deg);}
+    /* from{ transform: rotateZ(25deg);}
+    to{transform: rotateZ(-25deg); } */
+}
