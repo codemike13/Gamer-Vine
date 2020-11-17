@@ -1,17 +1,21 @@
 modStars = (ele) => {
+    //Get all the stars
     let stars = document.querySelectorAll('#stars > div')
+    //Catch the star rating based on ele id's which range 1-5
     let rating = ele.id
-    //Reset stars incase of decreasing star amount selection
+    //Always reset stars to white first before updating , this handles star rating reduction.
     for (let star of stars) {
         star.style.backgroundColor = 'white'
     }
-    //Add stars base on user selection
+    //Add stars based on user selection
     for (let i = 0; i < rating; i++) {
         stars[i].style.backgroundColor = 'yellow'
     }
 }
 
-addReview = () => {
+addReview = (ele) => {
+    let image = document.getElementById('userPicUpload')
+    console.log(image.files[0].mozFullPath);
 
 }
 
@@ -19,15 +23,11 @@ addReview = () => {
 scroller = (ele) => {
     let xboxSlide = document.getElementById('xbox-slide')
     let psSlide = document.getElementById('ps-slide')
-    for (let i = 504; i <) { }
-    setTimeout(function () {
-        //your code to be executed after 1 second
-    }, 100)
-
 
     if (ele === 'x-right') {
         //Used this to find window width.
-        // console.log(xboxSlide.offsetWidth);
+        // ---> console.log(xboxSlide.offsetWidth);
+        //currently it is hard set but you can make it dynamic to catch any resizing. 
         xboxSlide.scrollLeft += 504;
     }
     if (ele === 'x-left') {

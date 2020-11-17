@@ -1,22 +1,22 @@
 #reviews-content{
     width:100%;
-    height: 90%;
-    background-color:transparent;
+    height: 100%;
+    /* background-color:rgba(0, 0, 0,.5);
+     */
+     background-color: transparent;
     display: grid;
     grid-template-columns:1fr 4fr 4fr  4fr 4fr 1fr;
-    /* grid-template-columns: auto; */
-    grid-template-rows: 55% 45% ;
+    grid-template-rows: 55% 35% ;
     grid-template-areas: 
     '. rev1 rev1  rev2 rev2 .'
     '. . r-in r-in  . .'
     ;
-    /* text-align: center; */
     align-content: center;
-    /* align-items: center; */
+    overflow: visible;
+    box-shadow: inset 0px -30px 5px 5px rgba(19, 0, 35,.8);
+    padding-bottom: 2%;
 }
-/* #reviews-content div{
-    background-color: white;
-} */
+
 #bt1{
     grid-area: bt1;
     display: flex;
@@ -25,7 +25,15 @@
     justify-content: center;
     align-items: center;
     transform: skewY(-2deg) rotateZ(-2deg);
-
+}
+#bt1 button{
+    width:100%;
+    height:30%;
+    font-size: 5rem;
+    color: rgb(46, 41, 122);
+    background-color: transparent;
+    border: none;
+    text-shadow: 5px 5px 5px rgb(72, 104, 165);
 }
 #bt2{
     grid-area: bt2;
@@ -34,8 +42,18 @@
     height: 100%;
     justify-content: center;
     align-items: center;
-    transform:  rotateZ(2deg);
+    transform:  rotateZ(-1deg);
     margin-top: -25%;
+    margin-left: 15%;
+}
+#bt2 button{
+    width:100%;
+    height:30%;
+    font-size: 5rem;
+    color: rgb(46, 41, 122);
+    background-color: transparent;
+    border: none;
+    text-shadow: 3px 5px 5px rgb(72, 104, 165);
 }
 #bt3{
     grid-area: bt3;
@@ -44,10 +62,20 @@
     height: 100%;
     justify-content: center;
     align-items: center;
-    transform: rotateZ(1deg);
-    margin-top: -25%;
-
+    transform: rotateZ(-1deg);
+    margin-top: -24%;
 }
+
+#bt3 button{
+    width:100%;
+    height:30%;
+    font-size: 5rem;
+    color: rgb(46, 41, 122);
+    background-color: transparent;
+    border: none;
+    text-shadow: -3px 5px 5px rgb(72, 104, 165);
+}
+
 #bt4{
     grid-area: bt4;
     display: flex;
@@ -55,8 +83,19 @@
     height: 100%;
     justify-content: center;
     align-items: center;
-    transform: skewY(2deg) rotateZ(3deg);
+    transform: skewY(2deg) ;
+    margin-left: 15%;
+    overflow: visible;
+}
 
+#bt4 button{
+    width:100%;
+    height:30%;
+    font-size: 5rem;
+    color: rgb(46, 41, 122);
+    background-color: transparent;
+    border: none;
+    text-shadow: 5px 5px 5px rgb(72, 104, 165);
 }
 
 #ps-logo{
@@ -76,10 +115,8 @@
 #ps-review{
     display: grid;
     width: 98%;
-    height: 90%;
-    /* grid-template-columns: 1fr 4fr 1fr; */
+    height: 100%;
     grid-template-columns: 10% 80% 10%;
-    /* margin: -5%; */
     grid-template-areas: 
     'bt1 review bt2'
     ;
@@ -87,6 +124,7 @@
     overflow-x: scroll;
     align-content: center;
     transform: skewY(-.5deg);
+    margin-top: -2%;
 
 }
 
@@ -96,18 +134,17 @@
 #xb-review{
     display: grid;
     width: 98%;
-    height: 90%;
+    height: 100%;
     grid-template-columns: 10% 80% 10%;
-    /* grid-template-rows: 15% 85%; */
-    /* margin: 5%; */
     grid-template-areas: 
     'bt3 review bt4'
     ;
     grid-area: rev2;
     overflow-x: scroll;
+    overflow-y: visible;
     align-content: center;
     transform: skewY(.5deg);
-
+    margin-top: -2%;
 }
 
 
@@ -120,11 +157,9 @@
     grid-template-columns: repeat(6,100%);
     width:35vw;
     overflow-x: scroll;
-    overflow-y: hidden;
+    overflow-y: visible;
     transform: skewY(2deg);
-
-    /* align-content: center; */
-
+    scroll-behavior: smooth;
 }
 #xbox-slide::-webkit-scrollbar {
   display: none;
@@ -137,8 +172,7 @@
     overflow-x: scroll;
     overflow-y: hidden;
     transform: skewY(-2deg);
-    /* align-content: center; */
-
+    scroll-behavior:smooth;
 }
 #ps-slide::-webkit-scrollbar {
   display: none;
@@ -155,8 +189,7 @@
     grid-template-areas: 
     'buttons txt txt'
     ;
-    /* border:1px solid black; */
-    background-color: rgb(165, 64, 224);
+    color: rgb(115, 198, 204);
 }
 
 #review-buttons{
@@ -164,10 +197,8 @@
     display: flex;
     flex-direction: column;
     width: 110%;
-
-    /* justify-content: space-evenly; */
     align-items: center;
-    /* border:1px solid black; */
+    justify-content: space-between;
     text-align: center;
 
     
@@ -177,7 +208,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border:1px solid black; */
+    flex-direction: column;
 }
 
 .submits{
@@ -187,8 +218,21 @@
 }
 #rev-input{
     width: 90%;
-    height: 100%;
-    border-radius: 25px;
+    height: 60%;
+    border: none;
+    background-color:transparent;
+    opacity: .7;
+    font-size: 1.4rem;
+    background-image: url('/images/screenThing.png');
+    background-position: center;
+    background-size: 100% 110%;
+    background-repeat: no-repeat;
+    padding-left: 12%;
+    padding-right: 10%;
+    padding-top: 4%;
+    color: rgb(216, 216, 216);
+    margin-left: 5%;
+    outline: none;
 }
 
 #review-card{
@@ -200,40 +244,108 @@
     grid-template-areas: 
     'user txt txt'
     ;
-    /* border:1px solid black; */
     background-image: url('/images/screenThing.png');
     background-position: center;
     background-size: 115% 110%;
     background-repeat: no-repeat;
-
+    border: none;
 }
-#user-stars{
+#user-pane{
     grid-area: user;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     height: 90%;
     /* border: 1px solid black; */
     margin:5%;
+    padding-left:16%;
     background: transparent;
 }
 #user-review{
-    grid-area: txt;   
-    width: 90%;
+    grid-area: txt;  
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%; 
     height: 90%; 
     /* border: 1px solid black; */
     margin:5%;
     background-color: none;
 }
-#user-img{
+#user-review h1{
+    margin-bottom: -2%;
+    font-family: ethno;
+}
+#user-review p{
     width: 90%;
+    height: 70%;
+}
+.user-img{
+    width: 100%;
     height: 40%;
     margin:5%;
-
+}
+.user-info{
+    width: 90%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-family: ethno;
+}
+#user-stars{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 90%;
+    height: 5vh;
+    /* border: 1px solid black; */
+}
+#usernameinput{
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#username{
+    border-radius: 25px;
+}
+#userEmoji{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
 }
 
+#userEmoji::-webkit-scrollbar {
+  width:10px;
+}
+ 
+#userEmoji::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+ 
+#userEmoji::-webkit-scrollbar-thumb {
+  background-color: transparent;
+
+background-image: url('/images/Left-right_arrow.png');
+background-position: left;
+background-size: 40% 100%;
+background-repeat: no-repeat;
+}
+#userEmoji img{
+    width: 15%;
+    height: 10%;
+    margin-right: 5%;
+
+}
 #stars{
     display: flex;
     align-items: center;
@@ -244,11 +356,26 @@
     /* border: 1px solid black; */
 }
 
+
 #stars div{
     width: 90%;
     height: 60%;
     clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     border: 1px solid black;
+    background-color: white;
+}
+
+#user-stars div{
+    width: 90%;
+    height: 60%;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    border: 1px solid black;
+    /* background-color: white; */
+}
+.yellow{
+    background-color: yellow;
+}
+.white{
     background-color: white;
 }
 

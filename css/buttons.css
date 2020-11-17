@@ -7,7 +7,7 @@
 
 #xbox{
      background-image: url('/images/imag-alts/xbox-icon-white.png');
-    background-size: 90% 100%;
+    background-size: 50% 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -27,8 +27,8 @@
 }
 
 #logo-a{
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     background-image: url('/images/grapes.png');
     background-size: 70% 100%;
     background-repeat: no-repeat;
@@ -45,4 +45,26 @@
     100%{transform: rotateZ(0deg);}
     /* from{ transform: rotateZ(25deg);}
     to{transform: rotateZ(-25deg); } */
+}
+
+
+#xb-submit{
+    height: 200%;
+    background-image: url('/images/xbox-controller.png');
+    background-size: 100% 150%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    margin-right: 5%;
+}
+
+#ps-submit{
+    height: 190%;
+    background-image: url('/images/ps5-controller.png');
+    background-size: 150% 170%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
 }

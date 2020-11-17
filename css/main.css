@@ -2,13 +2,17 @@
     font-family: 'ethno';
     src:url('/font/ethnocentric\ rg.ttf')format('truetype');
 }
+
+
 body{
     width: 99vw;
     height:100vh;
     overflow: hidden;
-    /* background-color: rgba(0, 0, 0, .8); */
-    background-color:rgba(19, 0, 35, 1);
-
+    background-color:rgba(0, 0, 0,1);
+    background-image: url('/images/dark-Vineyard.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 button{
     outline: none;
@@ -34,16 +38,12 @@ button{
 #home-logo{
     grid-area: home;
     display:flex;
-    height: 68%;
+    height: 100%;
     width:90%;
-    margin-top: 13%;
     margin-left: 7%;
     overflow: hidden;
     border-top-left-radius: 25%;
     border-bottom-left-radius: 25%;
-    /* box-shadow: 10px 0px 10px ; */
-    
-    /* background-color: inherit; */
     background: none;
    
 }
@@ -54,12 +54,13 @@ button{
     flex-shrink: 10;
     flex-direction: row;
     width: 98%;
-    height:62%;
+    height:50%;
+    margin-top: -2%;
     justify-content: flex-end;
     align-items: center;
-    background-color:rgba(0, 0, 0, .9);
+    /* background-color:red; */
+    background-color: transparent;
     /* border: 1px solid black; */
-    margin-top: 1%;
     border-top-right-radius: 5%;
     border-bottom-right-radius: 5%;
     border-top-left-radius: 2%;
@@ -69,9 +70,6 @@ button{
     background-size: 80% 150%;
     background-position: right;
     background-repeat: no-repeat;
-    /* border-left: none; */
-    /* border-bottom: none; */
-
 }
 #navbar h1{
     justify-self: start;
@@ -81,18 +79,52 @@ button{
     font-size:2rem;
     font-family: ethno;
     line-height: 150%;
-    animation:glow 6s linear infinite
+    animation:glow 10s linear infinite;
+    width:45%;
+}
+
+#nav{
+    grid-area: nav;
+    display: flex;
+    flex-shrink: 10;
+    flex-direction: row;
+    width: 98%;
+    height:50%;
+    justify-content: flex-end;
+    align-items: center;
+    background-color:red;
+    /* background-color: transparent; */
+    /* border: 1px solid black; */
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+    box-shadow: -5px 10px 15px ;
+    background-image: url('/images/vine.png');
+    background-size: 80% 150%;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 @keyframes glow{
-    0%{text-shadow:10px 10px 10px violet;
-    color:rgb(84, 31, 145);
+    0%{
+       text-shadow:0px 0px 0px violet;
+        color:rgb(232, 203, 233);
     }
-    50%{text-shadow:10px 10px 0px violet;
-    color:rgb(232, 203, 233);
+    25%{
+        text-shadow:5px 5px 10px violet;
+        color:rgb(84, 31, 145);
     }
-    100%{text-shadow:10px 10px 10px rgb(116, 44, 116);
-    color:rgb(40, 10, 73);
+    50%{
+        text-shadow:5px 5px 10px rgb(116, 44, 116);
+        color:rgb(84, 31, 145);
+
+
+    }
+    100%{
+        text-shadow:0px 0px 0px violet;
+        color:rgb(232, 203, 233);
+
     }
 }
 
@@ -108,11 +140,9 @@ on hover
     margin-right: 3%;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.4);
     box-shadow: 0px 5px 30px;
     border: none;
     border-radius: 20%;
-    /* clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%); */
 }
 
 #navbar a:hover{
@@ -120,37 +150,12 @@ on hover
     height: 65%;
 }
 
-
 #content {
     display: flex;
     justify-content: center;
     align-items: center;
     grid-area: cont;
     width: 100vw;
-    height:105%;
-
-    /* border: 1px solid black; */
-    /* margin-top: -50%; */
-}
-
-#content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: cont;
-    width: 100vw;
-    height:105%;
-
-    /* border: 1px solid black; */
-    /* margin-top: -50%; */
-}
-
-
-
-#landing-content{
-    height: 90%;
-    width: 99%;
-    border: 1px solid black;
-    background-color: rgba(150, 150, 150, 0.4);
+    height: 105%;
 
 }
