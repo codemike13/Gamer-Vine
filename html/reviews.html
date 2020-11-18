@@ -17,14 +17,11 @@
         </div>
         <div id="navbar">
             <h1>Gamer Vine</h1>
-            <div>
-                <label for="reviews"> REVIEWS</label>
-                <a id="reviews" href='./reviews.html'></a>
-            </div>
-            <a id='news' href='./news.html'></a>
+            <a id="reviews" href='./reviews.html'>REVIEWS</a>
+            <a id='news' href='./news.html'>NEWS</a>
             <a id='xbox' href='./xbox.html'></a>
             <a id='ps5' href='./ps5.html'></a>
-            <a id='ps5' href='./about.html'></a>
+            <a id='about' href='./about.html'>ABOUT </a>
 
 
         </div>
@@ -42,15 +39,15 @@
                     </div>
                     <div id='ps-slide'>
 
-                        <div id='review-card'>
-                            <div id='user-pane'>
+                        <div class='review-card'>
+                            <div class='user-pane'>
 
                                 <img class='user-img' src="/images/emojis/019-vomiting.png" alt="user picture">
 
-                                <div id='username'>
+                                <div class='username'>
                                     <h4>Sick Gamer</h4>
                                 </div>
-                                <div id='user-stars'>
+                                <div class='user-stars'>
                                     <div class="yellow"></div>
                                     <div class="white"></div>
                                     <div class="white"></div>
@@ -58,29 +55,27 @@
                                     <div class="white"></div>
                                 </div>
                             </div>
-                            <div id='user-review'>
-                                <h1>PS5</h1>
+                            <div class='user-review'>
+                                <h1>PS-5</h1>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dignissimos odit
-                                    quia
-                                    quod dicta, quis tenetur assumenda dolore deleniti, dolorum in iusto culpa
-                                    distinctio
-                                    voluptatum perferendis eligendi rerum maiores mollitia!Sint molestias autem repellat
-                                    tempora nam doloribus quam voluptate placeat, iste suscipit, laudantium nobis
-                                    officiis
-                                    saepe.
+                                    BIRD neon neon neon neon neon neon neon neon neon neon neon neon neon neon neon neon
+                                    neon neon neon neon neon neon neon
+                                    neon neon neon neon neon neon neon neon neon neon neon neon neon neon neon neon neon
+                                    neon neon neon neon neon neon neon
+                                    neon neon neon neon neon neon neon neon neon neon neon BIRD
+
                                 </p>
                             </div>
                         </div>
-                        <div id='review-card'>
-                            <div id='user-pane'>
+                        <div class='review-card'>
+                            <div class='user-pane'>
 
                                 <img class='user-img' src="/images/emojis/045-nerd.png" alt="user picture">
 
-                                <div id='username'>
+                                <div class='username'>
                                     <h4>Sick Gamer</h4>
                                 </div>
-                                <div id='user-stars'>
+                                <div class='user-stars'>
                                     <div class="yellow"></div>
                                     <div class="yellow"></div>
                                     <div class="yellow"></div>
@@ -88,8 +83,8 @@
                                     <div class="yellow"></div>
                                 </div>
                             </div>
-                            <div id='user-review'>
-                                <h1>PS5</h1>
+                            <div class='user-review'>
+                                <h1>PS-5</h1>
                                 <p>
                                     review 2
                                 </p>
@@ -109,15 +104,15 @@
                             < </button>
                     </div>
                     <div id='xbox-slide'>
-                        <div id='review-card'>
-                            <div id='user-pane'>
+                        <div class='review-card'>
+                            <div class='user-pane'>
 
                                 <img class='user-img' src="/images/emojis/001-smile.png" alt="user picture">
 
-                                <div id='username'>
+                                <div class='username'>
                                     <h4>Sick Gamer</h4>
                                 </div>
-                                <div id='user-stars'>
+                                <div class='user-stars'>
                                     <div class="yellow"></div>
                                     <div class="yellow"></div>
                                     <div class="yellow"></div>
@@ -125,7 +120,7 @@
                                     <div class="white"></div>
                                 </div>
                             </div>
-                            <div id='user-review'>
+                            <div class='user-review'>
                                 <h1>XBOX</h1>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dignissimos odit
@@ -137,15 +132,15 @@
                                 </p>
                             </div>
                         </div>
-                        <div id='review-card'>
-                            <div id='user-pane'>
+                        <div class='review-card'>
+                            <div class='user-pane'>
 
                                 <img class='user-img' src="/images/emojis/010-anguished.png" alt="user picture">
 
-                                <div id='username'>
+                                <div class='username'>
                                     <h4>Sick Gamer</h4>
                                 </div>
-                                <div id='user-stars'>
+                                <div class='user-stars'>
                                     <div class="yellow"></div>
                                     <div class="yellow"></div>
                                     <div class="white"></div>
@@ -153,7 +148,7 @@
                                     <div class="white"></div>
                                 </div>
                             </div>
-                            <div id='user-review'>
+                            <div class='user-review'>
                                 <h1>XBOX</h1>
 
                                 <p>
@@ -172,49 +167,51 @@
                     <div id="review-buttons">
 
                         <h2>Write a review</h2>
-                        <div id='stars'>
+                        <div id='stars' data-star-value="">
                             <div onclick='modStars(this);' id="1"></div>
                             <div onclick='modStars(this);' id="2"></div>
                             <div onclick='modStars(this);' id="3"></div>
                             <div onclick='modStars(this);' id="4"></div>
                             <div onclick='modStars(this);' id="5"></div>
                         </div>
-                        Click controller to post to corresponding console review:
+                        Click controller to post to
+                        corresponding console review:
                         <br>
-                        <div class='user-info'>
-                            <button class='submits' id="xb-submit" onclick="addReview(this)"></button>
-                            <button class='submits' id="ps-submit"></button>
+                        <div id='user-submits'>
+                            <button class='submits' id="ps-submit" onclick="addReview(this);"></button>
+                            <button class='submits' id="xb-submit" onclick="addReview(this);"></button>
                         </div>
 
                     </div>
                     <div id="review-txt">
-                        <textarea id='rev-input' type="text" rows="4" cols="50" maxlength='200'></textarea>
-                        <div class='user-info'>
-                            <div id=usernameinput>
-                                <label for="username">Choose Name: </label>
-                                <br>
-                                <input type="text" id='username' placeholder="Gamer 4 lyfe">
-                            </div>
-                            <div>
-                                <label for="userEmoji">Choose Emoji:</label>
-                                <div id='userEmoji'>
-                                    <img src="/images/emojis/001-smile.png" alt="">
-                                    <img src="/images/emojis/002-grin.png" alt="">
-                                    <img src="/images/emojis/003-wink.png" alt="">
-                                    <img src="/images/emojis/004-heart eyes.png" alt="">
-                                    <img src="/images/emojis/005-shy.png" alt="">
-                                    <img src="/images/emojis/009-worried.png" alt="">
-                                    <img src="/images/emojis/010-anguished.png" alt="">
-                                    <img src="/images/emojis/011-confused.png" alt="">
-                                    <img src="/images/emojis/013-tongue out.png" alt="">
-                                    <img src="/images/emojis/019-vomiting.png" alt="">
-                                    <img src="/images/emojis/022-rage.png" alt="">
-                                    <img src="/images/emojis/043-thinking.png" alt="">
-                                    <img src="/images/emojis/045-nerd.png" alt="">
-                                    <img src="/images/emojis/049-facepalm.png" alt="">
-                                    <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik icons</a>
+                        <textarea id='rev-input' type="text" rows="4" cols="50" maxlength='300'></textarea>
+                    </div>
 
-                                </div>
+                    <div class='user-info'>
+                        <div>
+                            <label for="usernameinput"> Name: </label>
+
+                            <input type="text" id='usernameinput' placeholder="Gamer 4 lyfe">
+                        </div>
+                        <div>
+                            <label for="userEmoji">Choose Emoji:</label>
+                            <div id='userEmoji' data-emoji-choice=''>
+                                <img onclick="setEmoji(this);" src="/images/emojis/001-smile.png" alt="">
+                                <img onclick="setEmoji(this);" src="/images/emojis/002-grin.png" alt="">
+                                <img onclick="setEmoji(this);" src="/images/emojis/003-wink.png" alt="">
+                                <img onclick="setEmoji(this);" src="/images/emojis/004-heart eyes.png" alt="">
+                                <img onclick="setEmoji(this);" src="/images/emojis/005-shy.png" alt="">
+                                <img onclick="setEmoji(this);" src="/images/emojis/009-worried.png" alt="">
+                                <img onclick="setEmoji(this);" src="/images/emojis/010-anguished.png" alt="">
+                                <img onclick="setEmoji(this);" src="/images/emojis/011-confused.png" alt="">
+                                <img onclick="setEmoji(this);" src="/images/emojis/013-tongue out.png" alt="">
+                                <img onclick="setEmoji(this);" src="/images/emojis/019-vomiting.png" alt="">
+                                <img onclick="setEmoji(this);" src="/images/emojis/022-rage.png" alt="">
+                                <img onclick="setEmoji(this);" src="/images/emojis/043-thinking.png" alt="">
+                                <img onclick="setEmoji(this);" src="/images/emojis/045-nerd.png" alt="">
+                                <img onclick="setEmoji(this);" src="/images/emojis/049-facepalm.png" alt="">
+                                <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik icons</a>
+
                             </div>
                         </div>
                     </div>

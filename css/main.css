@@ -73,38 +73,17 @@ button{
 }
 #navbar h1{
     justify-self: start;
-    color:rgb(84, 31, 145);
-    text-shadow:10px 10px 10px violet;
+    color:rgb(103, 2, 218);
+    text-shadow:1px 1px 10px rgb(116, 44, 116);
     margin-right: 8%;
     font-size:2rem;
     font-family: ethno;
     line-height: 150%;
-    animation:glow 10s linear infinite;
+    /* animation:glow 10s linear infinite; */
     width:45%;
 }
 
-#nav{
-    grid-area: nav;
-    display: flex;
-    flex-shrink: 10;
-    flex-direction: row;
-    width: 98%;
-    height:50%;
-    justify-content: flex-end;
-    align-items: center;
-    background-color:red;
-    /* background-color: transparent; */
-    /* border: 1px solid black; */
-    border-top-right-radius: 5%;
-    border-bottom-right-radius: 5%;
-    border-top-left-radius: 2%;
-    border-bottom-left-radius: 2%;
-    box-shadow: -5px 10px 15px ;
-    background-image: url('/images/vine.png');
-    background-size: 80% 150%;
-    background-position: right;
-    background-repeat: no-repeat;
-}
+
 
 @keyframes glow{
     0%{
@@ -135,20 +114,26 @@ on hover
 */
 #navbar a{
     display: flex;
-    height: 70%;
-    width:10%;
+    height: 90%;
+    width:20%;
     margin-right: 3%;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 5px 30px;
     border: none;
     border-radius: 20%;
+    background-color: rgba(0,0,0,.3);
+    box-shadow: 0px 15px 30px 5px rgba(19,0,35,.8);
+    opacity: .6;
+    transition: 1s;
 }
 
 #navbar a:hover{
-    width: 11%; 
-    height: 65%;
+    opacity: .9;
+    text-shadow:5px 8px 0px rgb(84, 31, 145);;
+    font-size: 1.4rem;
 }
+
+
 
 #content {
     display: flex;

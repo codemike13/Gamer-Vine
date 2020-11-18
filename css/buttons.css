@@ -1,8 +1,15 @@
 #ps5{
     background-image: url('/images/imag-alts/ps5-icon-white.png');
-    background-size: 100% 50%;
+    background-size: 70% 50%;
     background-repeat: no-repeat;
     background-position: center;
+    
+}
+#about{
+    text-decoration: none;
+    font-family: ethno;
+    color: white;
+    font-size: 1em;
 }
 
 #xbox{
@@ -13,17 +20,25 @@
 }
 
 #news{
-    background-image: url('/images/imag-alts/news-icon-white.png');
+    /* background-image: url('/images/imag-alts/news-icon-white.png');
     background-size: 90% 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
+    text-decoration: none;
+    font-family: ethno;
+    color: white;
+    font-size: 1.2rem;
 }
 
 #reviews{
-    background-image: url('/images/imag-alts/reviews-icon-white.png');
+    /* background-image: url('/images/imag-alts/reviews-icon-white.png');
     background-size: 100% 60%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
+     text-decoration: none;
+    font-family: ethno;
+    color: white;
+    font-size: 1.2rem;
 }
 
 #logo-a{
@@ -49,22 +64,23 @@
 
 
 #xb-submit{
-    height: 200%;
+    height: 60%;
     background-image: url('/images/xbox-controller.png');
     background-size: 100% 150%;
     background-repeat: no-repeat;
     background-position: center;
     border: none;
     background-color: transparent;
-    margin-right: 5%;
 }
 
 #ps-submit{
-    height: 190%;
+    height: 60%;
     background-image: url('/images/ps5-controller.png');
     background-size: 150% 170%;
     background-repeat: no-repeat;
     background-position: center;
     border: none;
     background-color: transparent;
+    margin-right: 5%;
+
 }
