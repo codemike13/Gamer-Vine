@@ -5,8 +5,6 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/buttons.css">
     <link rel="stylesheet" href="/css/news.css">
-    <link rel="stylesheet" href="/css/slideNewsEditor.css">
-
     <script src="/js/news.js"></script>
 </head>
 
@@ -18,33 +16,22 @@
         </div>
         <div id="navbar">
             <h1>Gamer Vine</h1>
-            <a id="reviews" href='./reviews.html'>REVIEWS</a>
-            <a id='news' href='./news.html'>NEWS</a>
+            <a id="reviews" href='./reviews.html'></a>
+            <a id='news' href='./news.html'></a>
             <a id='xbox' href='./xbox.html'></a>
             <a id='ps5' href='./ps5.html'></a>
-            <a id='about' href='./about.html'>ABOUT </a>
+            <a id='ps5' href='./about.html'></a>
 
 
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
 
         <div id="content">
-            <div id="myNav" class="overlay">
-                <div class="overlay-content">
-                    <div id="newNews">
-                        <h1 id="title">Add Breaking News!</h1>
-                        <input id="heading" placeholder="Heading Title" />
-                        <textarea id="body" placeholder="Type body here"></textarea>
-                        <input id="linking" placeholder="Add link to the news" />
-                        <div id="imagen">
-                            <label for="imagen">Select image:</label>
-                            <input type="file" id="image-upload" accept="image/*" onchange="loadImg(event)">
-                        </div>
-                        <button id="buttonnew" onclick="newNews()">Press here for Add News</button>
-                    </div>
-                </div>
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-            </div>
             <div id="newsonly">
                 <div class="news" id="news1">
                     <div id="headline">
@@ -112,11 +99,25 @@
                     </div>
                 </div>
             </div>
+            <div class="new" id="newNews">
+                <h2 id="title">Add Breaking News!</h2>
+                <input id="heading" placeholder="Heading Title" />
+                <textarea id="body" placeholder="Type body here"></textarea>
+                <input id="linking" placeholder="Add link to the news" />
+                <label for="imag">Select image:</label>
+                <input type="file" id="imagen" name="img" accept="image/*">
+                <img id="newimagen" />
+                <button id="buttonnew" onclick="newNews()">Press here for Add News</button>
+            </div>
 
-
-            <button onclick="openNav()"> Add new article</button>
         </div>
+
     </div>
+
+    </div>
+
+    </div>
+
 
 
 </body>
