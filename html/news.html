@@ -4,8 +4,10 @@
 <head>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/buttons.css">
+    <link rel="stylesheet" href="/css/news.css">
+    <link rel="stylesheet" href="/css/slideNewsEditor.css">
 
-    <script src="script.js"></script>
+    <script src="/js/news.js"></script>
 </head>
 
 <body>
@@ -16,23 +18,105 @@
         </div>
         <div id="navbar">
             <h1>Gamer Vine</h1>
-            <a id="reviews" href='./reviews.html'></a>
-            <a id='news' href='./news.html'></a>
-            <a id='xbox' href='./xbox.html'></a>
-            <a id='ps5' href='./ps5.html'></a>
-            <a id='ps5' href='./about.html'></a>
+            <a id="reviews" href='./reviews.html'>REVIEWS</a>
+            <a id='news' href='./news.html'>NEWS</a>
+            <a id='ps5' href='./ps5.html'>Inquire</a>
+            <a id='about' href='./about.html'>ABOUT </a>
 
 
         </div>
 
-        <div id="content">
+        <div id="myNav" class="overlay">
+            <div class="overlay-content">
+                <div id="newNews">
+                    <input id="heading" placeholder="Heading " />
+                    <input id="subHeading" placeholder="Sub Heading" />
 
-            <div id='landing-content'>
-
+                    <textarea id="body" placeholder="Type body here"></textarea>
+                    <input id="link" placeholder="Add link to the news" />
+                    <div id="image">
+                        <label for="image">Select image:</label>
+                        <input type="file" id="image-upload" accept="image/*" onchange="loadImg(event)">
+                    </div>
+                    <button id="buttonnew" onclick="newNews()">Click to Add</button>
+                </div>
             </div>
-        </div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
+        </div>
+        <div id="content">
+            <div id='editor-button'>
+                <button onclick="openNav()"> + ARTICLE </button>
+            </div>
+            <div id="news-pane">
+
+                <div id="articles">
+
+
+                    <div class="news">
+                        <div class="headline">
+                            <h1>Sony VS Microsoft </h1>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/images/news1.jpeg">
+                            <h3 class='subhead'>Battle of Titans</h3>
+                        </div>
+                        <p class="body-text">Beyond the console wars, the companies war! What is on game for Sony
+                            and Microsoft after
+                            the
+                            release of their new consoles?and what new
+                            services and new games would be provided next to their users?<a id='link'
+                                href="https://newsbeezer.com/argentinaeng/playstation-1-after-26-years-they-discovered-a-hidden-function/">
+                                Click here</a>
+                            to find out!!
+
+                        </p>
+                        <button class="delete" onclick="remove(this)"> x </button>
+                    </div>
+                    <div class="news">
+                        <div class="headline">
+                            <h1>The Secret Life of Playstation </h1>
+                        </div>
+                        <div class="photo">
+                            <img src="/images/news2.jpeg">
+                            <h3 class='subhead'>A "Playful" mystery</h3>
+                        </div>
+                        <p class="body-text">After 26 years is it still possible to find new functionality in the
+                            Playstation 1 <a id='link'
+                                href="https://newsbeezer.com/argentinaeng/playstation-1-after-26-years-they-discovered-a-hidden-function/">
+                                Click here</a>
+                            to find out!!
+
+                        </p>
+                        <button class="delete" onclick="remove(this)"> x </button>
+                    </div>
+
+                    <div class="news">
+                        <button class="delete" onclick="remove(this)"> x </button>
+                        <div class="headline">
+                            <h1>Xbox Series X out of stock!</h1>
+                        </div>
+                        <div class="photo">
+                            <img src="/images/news3.jpeg">
+                            <h3 class='subhead'>Find your Fix</h3>
+                        </div>
+                        <p class="body-text">Do you want to buy the new Xbox Series X but dont know where due to the
+                            shortage?
+                            Check <a id='link'
+                                href="https://www.tomsguide.com/news/xbox-series-x-stock-heres-the-latest-update-from-microsoft">
+                                here</a>
+                            for the latest update!
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
+
 
 </body>
 

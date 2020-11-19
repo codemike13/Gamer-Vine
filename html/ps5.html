@@ -4,8 +4,10 @@
 <head>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/buttons.css">
+    <link rel="stylesheet" href="/css/ps5.css">
+    <link rel="stylesheet" href="/css/slideInquireEditor.css">
+    <script src="/js/news.js"></script>
 
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -16,18 +18,134 @@
         </div>
         <div id="navbar">
             <h1>Gamer Vine</h1>
-            <a id="reviews" href='./reviews.html'></a>
-            <a id='news' href='./news.html'></a>
-            <a id='xbox' href='./xbox.html'></a>
-            <a id='ps5' href='./ps5.html'></a>
-            <a id='ps5' href='./about.html'></a>
-
+            <a id="reviews" href='./reviews.html'>REVIEWS</a>
+            <a id='news' href='./news.html'>NEWS</a>
+            <a id='ps5' href='./ps5.html'>Inquire</a>
+            <a id='about' href='./about.html'>ABOUT </a>
 
         </div>
 
         <div id="content">
 
-            <div id='landing-content'>
+            <div id="myNav" class="overlay">
+                <div class="overlay-content">
+                    <div id="newNews">
+                        <input id="heading" placeholder="Heading " />
+                        <input id="subHeading" placeholder="Sub Heading" />
+
+                        <textarea id="body" placeholder="Type body here"></textarea>
+                        <input id="link" placeholder="Add link to the news" />
+                        <div id="image">
+                            <label for="image">Select image:</label>
+                            <input type="file" id="image-upload" accept="image/*" onchange="loadImg(event)">
+                        </div>
+                        <button id="buttonnew" onclick="newNews()">Click to Add</button>
+                    </div>
+                </div>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            </div>
+            <div>
+                <button id='contact' onclick="openNav()"> Drop Us a Message! </button>
+            </div>
+            <div id='inquire-content'>
+                <div id='card'>
+
+                    <table>
+                        <tr>
+                            <th>Specs</th>
+                            <th>Xbox X</th>
+                            <th>PS5</th>
+                        </tr>
+                        <tr>
+                            <td>Price</td>
+                            <td>$499</td>
+                            <td>$499</td>
+                        </tr>
+                        <tr>
+                            <td>CPU</td>
+                            <td>8C/16T Ren 2</td>
+                            <td>8C/16T Ren 2</td>
+                        </tr>
+                        <tr>
+                            <td>GPU</td>
+                            <td>RDNA2 3,328 cores</td>
+                            <td>RDNA2 2,304 cores</td>
+                        </tr>
+                        <tr>
+                            <td>Internal Storage</td>
+                            <td>1 TB</td>
+                            <td>825 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Memory Bandwidth</td>
+                            <td>10 GB</td>
+                            <td>44 GB</td>
+                        </tr>
+                        <tr>
+                            <td>Optical Drive</td>
+                            <td>Blu-ray</td>
+                            <td>Blu-ray</td>
+                        </tr>
+                        <tr>
+                            <td>Console specific games</td>
+                            <td>Halo, Sea of Thieves, Gears</td>
+                            <td>Spider Man, Demon's Soul, Sack boy</td>
+                        </tr>
+                        <tr>
+                            <td>Subscription</td>
+                            <td>Game pass and Xcloud</td>
+                            <td>PS now</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id='inquire'>
+
+
+                    <div>
+                        <h3> Check out these links to find where to Buy!</h3>
+                        <h1>XBOX</h1>
+                        <a
+                            href='https://www.amazon.com/Xbox-X/dp/B08H75RTZ8?tag=hawk-future-20&ascsubtag=tomsguide-us-6943999327043633000-20'>Amazon</a>
+
+
+                        <a
+                            href='https://www.target.com/p/xbox-series-x-console/-/A-80790841?clkid=12a3968cN2a9011eb90a042010a246e32&lnm=81938&afid=Future%20PLC.&ref=tgt_adv_xasd0002'>Target</a>
+
+
+                        <a
+                            href='https://www.xbox.com/en-US/consoles/xbox-series-x?ranMID=24542&ranEAID=kXQk6*ivFEQ&ranSiteID=kXQk6.ivFEQ-PxklWwN7TP3KgFMeh7YjHw&epi=kXQk6.ivFEQ-PxklWwN7TP3KgFMeh7YjHw&irgwc=1&OCID=AID2000142_aff_7593_1243925&tduid=%28ir__vwq21ixmu0kfqkqi2jy9q0nuau2xsi1axh1wirin00%29%287593%29%281243925%29%28kXQk6.ivFEQ-PxklWwN7TP3KgFMeh7YjHw%29%28%29&irclickid=_vwq21ixmu0kfqkqi2jy9q0nuau2xsi1axh1wirin00'>Microsoft</a>
+
+
+                        <a
+                            href='https://www.walmart.com/ip/Xbox-Series-X/443574645?irgwc=1&sourceid=imp_z0EQqg2OkxyLR2swUx0Mo38eUkEze621WwCVX80&veh=aff&wmlspartner=imp_1943169&clickid=z0EQqg2OkxyLR2swUx0Mo38eUkEze621WwCVX80&sharedid=&ad_id=565706&campaign_id=9383'>Walmart</a>
+
+                        <h1>PS-5</h1>
+
+                        <a
+                            href="https://www.amazon.com/PlayStation-5-Console/dp/B08FC5L3RG?tag=hawk-future-20&ascsubtag=tomsguide-us-8046375057681862000-20">Amazon</a>
+
+
+
+
+                        <a
+                            href="https://www.target.com/p/playstation-5-console/-/A-81114595?clkid=12a3968cN2a9011eb90a042010a246e32&lnm=81938&afid=Future%20PLC.&ref=tgt_adv_xasd0002#lnk=sametab">
+                            Target</a>
+
+
+
+
+                        <a href="https://direct.playstation.com/en-us/ps5">Sony</a>
+
+
+
+                        <a
+                            href="https://www.gamestop.com/video-games/playstation-5/consoles/products/playstation-5/11108140.html?utm_source=rakutenls&utm_medium=affiliate&utm_content=Future+Publishing+Ltd&utm_campaign=10&utm_kxconfid=tebx5rmj3&cid=afl_10000087&affID=77777&sourceID=kXQk6.ivFEQ-DfSPq.UFjhO4bldbDTv1LQ">Gamestop</a>
+
+                    </div>
+
+                </div>
 
             </div>
         </div>

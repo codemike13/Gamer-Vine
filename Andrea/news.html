@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/buttons.css">
+    <link rel="stylesheet" href="/css/news.css">
+    <script src="/js/news.js"></script>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id='home-logo'>
+            <a id="logo-a" href="./main.html"></a>
+        </div>
+        <div id="navbar">
+            <h1>Gamer Vine</h1>
+            <a id="reviews" href='./reviews.html'></a>
+            <a id='news' href='./news.html'></a>
+            <a id='xbox' href='./xbox.html'></a>
+            <a id='ps5' href='./ps5.html'></a>
+            <a id='ps5' href='./about.html'></a>
+
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <div id="content">
+            <div id="newsonly">
+                <div class="news" id="news1">
+                    <div id="headline">
+                        <h3>Sony vs Microsoft!</h3>
+                    </div>
+                    <div id="button">
+                        <button id=button onclick="removeNews()">X</button>
+                    </div>
+
+                    <div id="photo"><img src="/images/news1.jpeg"></div>
+
+                    <div id="body-text">
+                        <p>Beyond the console wars, the companies war! What is on game for Sony and Microsoft after the
+                            release of their new consoles?and what new
+                            services and new games would be provided next to their users? </p>
+                    </div>
+                    <div id="link">
+                        <a
+                            href="https://www.cnbc.com/2020/11/15/microsoft-looks-beyond-the-console-wars-with-new-xbox.html">Click
+                            here</a>
+                    </div>
+
+                </div>
+
+                <div class="news" id="news2">
+                    <div id="headline">
+                        <h3>Playstation 1 still have secret functions!</h3>
+                    </div>
+                    <div id="button">
+                        <button id=button onclick="removeNews2()">X</button>
+                    </div>
+
+                    <div id="photo"><img src="/images/news2.jpeg"></div>
+
+                    <div id="body-text">
+                        <p>After 26 years is still possible to find new functions in the Playstation 1</p>
+                    </div>
+                    <div id="link">
+                        <a
+                            href="https://newsbeezer.com/argentinaeng/playstation-1-after-26-years-they-discovered-a-hidden-function/">Click
+                            here</a>
+                    </div>
+                </div>
+
+
+                <div class="news" id="news3">
+                    <div id="headline">
+                        <h3>Xbox Series X out of stock!</h3>
+                    </div>
+                    <div id="button">
+                        <button id=button onclick="removeNews3()">X</button>
+                    </div>
+
+                    <div id="photo"><img src="/images/news3.jpeg"></div>
+
+                    <div id="body-text">
+                        <p>Do you want to buy the new Xbox Series X but you do not know where due to the sortage? Check
+                            the last news!</p>
+                    </div>
+                    <div id="link">
+
+                        <a
+                            href="https://www.tomsguide.com/news/xbox-series-x-stock-heres-the-latest-update-from-microsoft">Click
+                            here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="new" id="newNews">
+                <h2 id="title">Add Breaking News!</h2>
+                <input id="heading" placeholder="Heading Title" />
+                <textarea id="body" placeholder="Type body here"></textarea>
+                <input id="linking" placeholder="Add link to the news" />
+                <label for="imag">Select image:</label>
+                <input type="file" id="imagen" name="img" accept="image/*">
+                <img id="newimagen" />
+                <button id="buttonnew" onclick="newNews()">Press here for Add News</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
