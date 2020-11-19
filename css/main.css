@@ -145,3 +145,45 @@ on hover
     height: 105%;
 
 }
+
+#landing-content{
+     width: 95%;
+    height: 90%;
+    background-size: 130% 100%;
+    background-position: center;
+    /* background-image: url('https://media.gq.com/photos/5faaec567a1e869f28a4d859/master/pass/GameSole.jpg'); */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#landing-content div{
+    width:33%;
+    height: 100%;
+    /* opacity: .2; */
+z-index: 1;
+    /* background-color: rgba(2, 44, 250,.3); */
+}
+
+#a{
+    background-size: 60% 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('/images/ps5-solo.webp');
+}
+
+#c{
+    transform: scaleX(-1);
+    background-size: 130% 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-image: url('/images/xbox-solo.png');
+}
+
+#b{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

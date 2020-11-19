@@ -1,15 +1,15 @@
 #ps5{
-    background-image: url('/images/imag-alts/ps5-icon-white.png');
-    background-size: 70% 50%;
-    background-repeat: no-repeat;
-    background-position: center;
     
+     text-decoration: none;
+    font-family: ethno;
+    color: white;
+    font-size: 2em;
 }
 #about{
     text-decoration: none;
     font-family: ethno;
     color: white;
-    font-size: 1em;
+    font-size: 2em;
 }
 
 #xbox{
@@ -27,7 +27,8 @@
     text-decoration: none;
     font-family: ethno;
     color: white;
-    font-size: 1.2rem;
+        font-size: 2em;
+
 }
 
 #reviews{
@@ -38,7 +39,8 @@
      text-decoration: none;
     font-family: ethno;
     color: white;
-    font-size: 1.2rem;
+        font-size: 2em;
+
 }
 
 #logo-a{

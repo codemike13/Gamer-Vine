@@ -4,8 +4,10 @@
 <head>
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/buttons.css">
+    <link rel="stylesheet" href="/css/neon.css">
 
-    <script src="script.js"></script>
+
+    <script src="/JS/sounds.js"></script>
 </head>
 
 <body>
@@ -18,17 +20,26 @@
             <h1>Gamer Vine</h1>
             <a id="reviews" href='./reviews.html'>REVIEWS</a>
             <a id='news' href='./news.html'>NEWS</a>
-            <a id='xbox' href='./xbox.html'></a>
-            <a id='ps5' href='./ps5.html'></a>
+            <a id='ps5' href='./ps5.html'>Inquire</a>
             <a id='about' href='./about.html'>ABOUT </a>
 
         </div>
 
         <div id="content">
-
+            <h1 style='font-size: 7em; font-family: ethno; color:whitesmoke'>WELCOME TO GAMER VINE</h1>
             <div id='landing-content'>
-
+                <div id='a' onmouseover="play(this)" onmouseout="stop(this)">
+                    <audio id="ps5" src="/audio/playstation.m4a"></audio>
+                </div>
+                <div id='b' onmouseover="play(this)" onmouseout="stop(this)">
+                    <audio id="vs" src="/audio/vs2.m4a"></audio>
+                    <h1 id='neon'>VS</h1>
+                </div>
+                <div id='c' onmouseover="play(this)" onmouseout="stop(this)">
+                    <audio id='xbox' src="/audio/xb.m4a"></audio>
+                </div>
             </div>
+            <h3 style='font-size: 2em; font-family: ethno; color:whitesmoke'> Your one stop for console news</h3>
         </div>
 
     </div>
