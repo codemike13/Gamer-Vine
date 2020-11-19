@@ -11,34 +11,57 @@ function newNews() {
     console.log(uploadedImg);
 
     const new_post = document.createElement("DIV");
-    const new_heading = document.createElement("H2");
-    const new_sub_heading = document.createElement("H2");
-    const new_body = document.createElement("P");
+    new_post.setAttribute('class', 'news')
+
+    const new_heading_div = document.createElement("DIV");
+    new_heading_div.setAttribute('class', 'headline')
+    const new_heading = document.createElement("H1");
+
+    const new_sub_heading = document.createElement("H3");
+    new_sub_heading.setAttribute('class', 'subhead')
+
+
+    const new_body_p = document.createElement("P");
+    new_body_p.setAttribute('class', 'body-text')
+
     const new_link = document.createElement("A")
+    new_link.setAttribute('class', 'link')
+
+    const new_image_div = document.createElement("DIV")
+    new_image_div.setAttribute('class', 'photo')
+
     const new_img = document.createElement("IMG");
+    new_img.setAttribute('src', uploadedImg)
 
     //From form fill for new post
     const heading = document.getElementById("heading").value;
-    // const sub_head = document.getElementById("sub-head").value;
-    const bodyData = document.getElementById("body").value;
-    const linkData = document.getElementById("linking").value
-    const news_Posts = document.getElementById("newsonly");
-
+    const sub_head = document.getElementById("subHeading").value;
+    const body_p = document.getElementById("body").value;
+    const linkData = document.getElementById("link").value
+    const news_Posts = document.getElementById("articles");
+    //Set Data
     new_heading.innerText = heading;
-    new_body.innerText = bodyData;
-    new_link.innerText = linkData;
-    new_img.style.backgroundImage = "url(" + uploadedImg + ")";
+    new_sub_heading.innerText = sub_head;
+    new_body_p.innerText = body_p;
+    new_link.setAttribute('href', linkData)
+    new_link.innerText = "Click here!"
 
-    // new_post.appendChild(new_heading);
-    // new_post.appendChild(new_sub_heading);
-    // new_post.appendChild(new_body);
-    new_post.appendChild(new_img);
-    // new_post.appendChild(new_link);
+    //Append new inner fields
+    new_heading_div.appendChild(new_heading)
+
+    new_image_div.appendChild(new_img)
+    new_image_div.appendChild(new_sub_heading)
+
+    new_body_p.appendChild(new_link)
+    //Append to parent
+    new_post.appendChild(new_heading_div);
+    new_post.appendChild(new_image_div);
+    new_post.appendChild(new_body_p)
 
 
 
     // new_post.setAttribute
-    news_Posts.append(new_post);
+    news_Posts.prepend(new_post);
 
 }
 
