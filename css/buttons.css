@@ -1,40 +1,88 @@
 #ps5{
-    background-image: url('/images/imag-alts/ps5-icon-white.png');
-    background-size: 100% 50%;
-    background-repeat: no-repeat;
-    background-position: center;
+    
+     text-decoration: none;
+    font-family: ethno;
+    color: white;
+    font-size: 2em;
+}
+#about{
+    text-decoration: none;
+    font-family: ethno;
+    color: white;
+    font-size: 2em;
 }
 
 #xbox{
      background-image: url('/images/imag-alts/xbox-icon-white.png');
-    background-size: 90% 100%;
+    background-size: 50% 100%;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 #news{
-    background-image: url('/images/imag-alts/news-icon-white.png');
+    /* background-image: url('/images/imag-alts/news-icon-white.png');
     background-size: 90% 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
+    text-decoration: none;
+    font-family: ethno;
+    color: white;
+        font-size: 2em;
+
 }
 
 #reviews{
-    background-image: url('/images/imag-alts/reviews-icon-white.png');
+    /* background-image: url('/images/imag-alts/reviews-icon-white.png');
     background-size: 100% 60%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
+     text-decoration: none;
+    font-family: ethno;
+    color: white;
+        font-size: 2em;
+
 }
 
 #logo-a{
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     background-image: url('/images/grapes.png');
     background-size: 70% 100%;
     background-repeat: no-repeat;
     background-position: center;
     border: none;
-    background-color: rgba(0,0,0,1);
-
+    /* background-color: rgba(0,0,0,1); */
+    animation: tilty 3s linear  infinite  ;
 }
 
+@keyframes tilty{
+    0%{transform: rotateZ(0deg);}
+    25%{transform: rotateZ(5deg);}
+    50%{transform: rotateZ(-5deg);}
+    100%{transform: rotateZ(0deg);}
+    /* from{ transform: rotateZ(25deg);}
+    to{transform: rotateZ(-25deg); } */
+}
+
+
+#xb-submit{
+    height: 60%;
+    background-image: url('/images/xbox-controller.png');
+    background-size: 100% 150%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+}
+
+#ps-submit{
+    height: 60%;
+    background-image: url('/images/ps5-controller.png');
+    background-size: 150% 170%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    margin-right: 5%;
+
+}
